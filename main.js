@@ -2,15 +2,14 @@
     function InsertXFacesWidget() {
         const targetDiv = document.getElementById('x-faces-target');
         if (!targetDiv) {
-            console.warn('Div с id "x-faces-target" не найден.');
+            console.warn('Div "x-faces-target" not found');
             return;
         }
 
-        // Создаем iframe
         const iframe = document.createElement('iframe');
-        iframe.src = 'https://dev.anvio.com/certificate/?location=1&lang=en';
+        iframe.src = 'https://api.rud.fftz.space/v1/user/verify/80b21cc1-a408-40f0-b335-c9dd1e65f115';
         iframe.width = '100%';
-        iframe.height = '600';
+        iframe.height = '100%';
         iframe.style.border = 'none';
 
         targetDiv.appendChild(iframe);
