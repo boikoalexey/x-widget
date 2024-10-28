@@ -11,6 +11,7 @@
         iframe.width = '100%';
         iframe.height = '1000px';
         iframe.style.border = 'none';
+        iframe.allow = 'camera *;microphone *';
 
         targetDiv.appendChild(iframe);
     }
