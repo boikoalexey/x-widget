@@ -9,7 +9,7 @@
         const iframe = document.createElement('iframe');
         iframe.src = 'https://api.rud.fftz.space/v1/user/verify/80b21cc1-a408-40f0-b335-c9dd1e65f115';
         iframe.width = '100%';
-        iframe.height = '100%';
+        iframe.height = '1000px';
         iframe.style.border = 'none';
 
         targetDiv.appendChild(iframe);
